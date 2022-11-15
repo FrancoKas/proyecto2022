@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&display=swap');
+
+
+.eventos {
+    height: 400px;
+    width: 100%;
+    margin-top: 160px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 94px;
+}
+
+.tituloE {
+    font-family: Poppins;
+    color: #f3f5f9;
+    text-shadow: rgba(0, 0, 0, 0.596) 3px 3px 10px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&display=swap');
+
+
+.equipos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.equipos img {
+    width: 55px;
+    height: 55px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.team {
+    color: white;
+    font-size: 20px;
+}
+
+.equipo1, .equipo2 {
+    font-family: Poppins;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-evento {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+.score .puntaje {
+    font-size: 40px;
+    color: white;
+}
+
+.score .estado {
+    font-size: 17px;
+    color: white;
+}
+
+.infracciones {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.inf {
+    font-size: 20px;
+    color: rgb(215, 215, 215);
+    
+}
+
+.box-e {
+    background-color: #3636366d;
+    border: 1px solid #303030;
+    border-radius: 6px;
+    box-shadow: 6px 4px 10px -4px rgba(0,0,0,0.27);
+    font-family: Nunito Sans;
+    width: 90%;
+    
+}
+
+.alin-e1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-right: 1px solid black;
+}
+.alin-e2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.inf-e1 {
+    margin-right: 30px;
+}
+.inf-e2 {
+    margin-left: 30px;
+}
+
+.inf span {
+    font-size: 13px;
+    font-family: Nunito Sans;
+}
+
+.allInf {
+    width: 100%;
+    background-color: rgb(79, 79, 79);
+    padding: 20px;
+}
+
+.alineacion {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    padding: 20px;
+    padding-top: 0px;
+    border-radius: 6px;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.alin {
+    font-size: 18px;
+    color: rgb(215, 215, 215);
+    padding: 10px;
+
+}
+
+.alin .box-e {
+    background-color: rgb(58, 58, 58);
+    margin-top: 30px;
+}
+
+
+
+.allAlin {
+    margin-top: 20px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.allAlin h3 { 
+    margin-top: 20px;
+    margin: 0 auto;
+    color: rgb(218, 215, 215);
+
+}
+
+.alin span {
+    font-size: 16px;
+}
+
+.alin label, .alin span {
+    font-family: Nunito Sans;
+
+}
+
+.alin-e1 {
+    margin-right: 10px;
+}
+.alin-e2 {
+    margin-right: 10px;
+
+}
+
+.xFooter{
+    display: flex;
+}
+
+.tarjeta {
+    margin: 0 auto;
+    margin-top: 30px;
+}

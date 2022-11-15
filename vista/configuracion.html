@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/config.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/sesionSearchBar.js"></script>
+    <script src="../js/sesionNames.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="icon" href="../images/logos/icon.png">
+    <title>Configuracion de cuenta | OwnSports</title>
+</head>
+
+<body class="body">
+    <nav>
+        <div class="contenedor">
+            <a href="index.html"><img src="../images/logos/logo.png" alt="#" class="logo"></a>
+
+            <div class="menu">
+                <a href="eventos.html">Eventos</a>
+                <a href="partidos.html">Partidos</a>
+
+                <div class="sesion" style="position: relative">
+                    <div class="datos">
+                        <div class="user" id="user"
+                            style="color: white; font-family: Poppins; float: right; margin-top: 20px; width: 100px; margin-right: 10px;">
+                        </div>
+                        <div class="img" id="foto"></div>
+                        <div class="menuConfig" id="menuConfig">
+                            <div class="buttonsConfig">
+                                <a href="configuracion.html">Mi Perfil</a><br>
+                                <a href="premium.html">Obtener Premium</a><br>
+                                <a href="../controlador/cerrarSesion.php">Cerrar Sesión</a>
+                            </div>
+
+                        </div>
+
+                        <div class="buttons" id="buttons">
+                            <a href="registrarse.html">Registrarse</a>
+                            <a href="login.html">Iniciar Sesión</a>
+                        </div>
+
+                    </div><br>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Escribe para buscar">
+                <a class="search-btn" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+
+            <button class="btn-responsive" id="btn_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+    </nav>
+
+    <div class="rectanguloRM" id="menuResponsive">
+        <div class="menuR">
+
+            <div style="text-align: center">
+                <a href="registrarse.html" style="margin: 0 auto;">Registrarse</a><br>
+                <a href="login.html">Iniciar Sesión</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+                <h2 class="h3 mb-4 page-title">Mi cuenta</h2>
+                <div class="my-4">
+                    <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="false">Perfil</a>
+                        </li>
+                    </ul>
+
+                    <div class="row mt-5 align-items-center">
+                        <div class="col-md-3 text-center mb-" id="perfil">
+
+                        </div>
+                        <div class="col">
+                            <h6>Información Personal</h6>
+                            <div class="row align-items-center">
+                                <div class="col-md-7">
+                                    <h4 class="mb-1" id="usuario"></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-4" />
+
+                    <a href="preferencias.html" style="text-decoration: none">Elegir preferencias</a>
+
+                    <form action="../controlador/editarUsuario.php" method="POST" enctype="multipart/form-data">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="nombreCom">Nombre Completo</label>
+                                <input type="text" class="form-control" placeholder="José Pérez" name="nombre"
+                                    required />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="image">Foto de perfil</label>
+                                <input type="file" class="form-control" name="image" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail4">Correo electrónico</label>
+                            <input type="email" class="form-control w-50" id="inputEmail4"
+                                placeholder="ejemplo@tucorreo.com" name="correo" required />
+                        </div>
+                        <input type="submit" class="btn btn-primary" id="inputButton3" value="Actualizar datos"
+                            name="config1" style="margin-top: 25px">
+                    </form>
+                </div>
+
+                <hr class="my-4" />
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <form method="POST" action="../controlador/editarUsuario.php">
+                            <div class="form-group">
+                                <label for="inputPassword4">Contraseña actual</label>
+                                <input type="password" class="form-control" id="inputPassword5" name="contraActual"
+                                    required />
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword5">Nueva contraseña</label>
+                                <input type="password" class="form-control" id="inputPassword5" name="contra"
+                                    required />
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword6">Confirmar contraseña</label>
+                                <input type="password" class="form-control" id="inputPassword6" name="cContra"
+                                    required />
+                            </div>
+                            <input type="submit" class="btn btn-primary" id="inputButton3" value="Actualizar contraseña"
+                                name="config2" style="margin-top: 25px">
+                        </form>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <p class="mb-2">Requisitos de la contraseña</p>
+                        <p class="small text-muted mb-2">Para crear una nueva contraseña, debe cumplir con todos los
+                            siguientes requisitos:</p>
+                        <ul class="small text-muted pl-4 mb-0">
+                            <li>Mínimo 8 caracteres</li><br>
+                            <li>Por lo menos un número</li><br>
+                            <li>No puede ser igual a la contraseña anterior</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="../js/nav.js"></script>
+</body>
+
+</html>
