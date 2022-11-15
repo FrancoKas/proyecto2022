@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.form {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x,
+select {
+    padding: 5px;
+    width: 3em;
+    height: 55px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    margin: 5px;
+}
+
+.nueva {
+    width: 2em;
+    height: 2em;
+    border: 1px solid rgb(71, 71, 71);
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.select {
+    width: 20em;
+}
+
+
+
+.lffin {
+    display: none;
+}
+
+
+.selectModo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#selEquipos,
+#selIndividual,
+#selEquipos2,
+#selIndividual2 {
+    display: none;
+    width: 23em;
+}
+
+.cDeporte,
+.labelCat {
+    display: none;
+}
+
+
+.enviar {
+    margin-top: 2em;
+    padding: 5px;
+    width: 150px;
+    height: 55px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    margin: 5px;
+}
+
+form {
+    text-align: center;
+}
+
+.x {
+    width: 23em;
+}
+
+.title {
+    background-color: rgba(255, 255, 255, 0.555);
+    border-top: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+h1 {
+    font-family: Poppins;
+    font-size: 40px;
+}
+
+.actualizados {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+
+}
+
+.actualizados label {
+    background-color: rgba(144, 238, 144, 0.699);
+    border: 2px solid rgba(0, 128, 0, 0.493);
+    padding: 12px;
+    border-radius: 8px;
+
+}
+
+.noactualizados {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+
+}
+
+.noactualizados label {
+    background-color: rgb(252, 77, 77);
+    border: 2px solid rgba(160, 2, 2, 0.493);
+    padding: 12px;
+    border-radius: 8px;
+
+}
